@@ -67,6 +67,8 @@ describe "some silly block functions" do
     end
   end
 
+
+
   describe "repeater" do
     it "executes the default block" do
       n = 2
@@ -74,6 +76,10 @@ describe "some silly block functions" do
         n += 3
       end
       expect(n).to eq(5)
+    end
+
+    it "breaks when no block is provided" do
+      repeater
     end
 
     it "executes the default block 3 times" do

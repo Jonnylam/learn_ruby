@@ -45,6 +45,7 @@ def first_word(simon)
 	simon.split(" ")[0]
 end
 
+
 def titleize(simon)
 	array = simon.split.map(&:capitalize).join(' ')
 	if array.include?("And")
