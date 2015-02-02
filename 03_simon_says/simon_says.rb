@@ -23,16 +23,22 @@ end
 # 		end
 # end
 
-def start_of_word(simon, num = 1)
-		splitting = simon.split("")
-		if num == 1
-		return splitting[num - 1] 
-	elsif num == 2 
-		return splitting[0].to_s + splitting[1].to_s
-	else
-		return splitting[0].to_s + splitting[1].to_s + splitting[2].to_s
-	end
+# def start_of_word(simon, num = 1)
+# 		splitting = simon.split("")
+# 		if num == 1
+# 		return splitting[num - 1] 
+# 	elsif num == 2 
+# 		return splitting[0].to_s + splitting[1].to_s
+# 	else
+# 		return splitting[0].to_s + splitting[1].to_s + splitting[2].to_s
+# 	end
 
+# end
+
+
+def start_of_word(simon, num = 1)
+		range = (0...num)
+		simon[range]
 end
 
 def first_word(simon)
