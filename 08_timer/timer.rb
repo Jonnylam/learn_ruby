@@ -19,6 +19,3 @@ class Timer
 
 
 end
-
-# when @seconds > 1200
-# 			"0#{@seconds/3600}:0#{@seconds%3600/60}:#{@seconds%60}"
